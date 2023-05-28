@@ -1,13 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Trochut&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trochut:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
 body {
   margin: 0;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #202020;
+  font-family: 'Trochut', cursive;
+  height:100vmax;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.blog-preview a{
+  text-decoration: none;
+  color: #202020;
+}
+.navbar{
+  height:12vmin;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: radial-gradient( #202020 4%,
+                    transparent 14%);
+  background-size: 1.5vmin 1.5vmin;
+  z-index: -1;
+  background-position: 0px, 0px;
+  transition: background-size 750ms;
+  font-size: 2.5vmin;
+  background-color: #90EE9E;
+  
+}
+.navbar h1{
+  font-size: 6vmin;
+  margin: 2vmin;
+  color: #2F4858;
+  font-weight: bold;
+  font-family: 'Trochut', cursive;
+}
+.navbar a{
+  text-decoration: none;
+  color: #202020;
+  margin: 4vmin;
+  font-weight: bold;
+  padding: 2vmin;
+  border-radius: 60%;
+  transition: all 200ms;
+  font-family: 'Trochut', cursive;
+}
+.navbar:hover{
+  background-size: 3vmin 3vmin;
+}
+.links>a:hover{
+  background: #D8F9DA;
+  font-size: 3vmin;
+}
+
+.content{
+  background-color: #ffffff;
+  height: 100vmin;
+}
+.content h1{
+  padding-top: 5vmin;
+  color: #202020;
+  font-size: 5vmin;
+}
+
+.homepage{
+  padding: 5vmin;
+  background: url("https://herreputationforaccomplishment.files.wordpress.com/2015/04/screenshot-books-google-com-2015-04-19-18-27-17.png") no-repeat;
+  background-size: cover;
+  font-size: 5vmin;
+  font-weight: bold;
+  animation:background 20s infinite linear;
+  text-shadow: #7EAE83 4px 2px 0px;
+  height: 25vmin;
+  margin-top: 0;
+}
+@keyframes background{
+  0%{
+    background-position: 0% 0%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
+
+.hr{
+  height: 2px;
+  width: 140vmin;
+  margin: auto;
+  margin-top: -4vmin;
+  margin-bottom: 4vmin;
+  background: linear-gradient( to right, transparent, #202020, transparent);
+}
+.blog-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.blog-list .blog-preview{
+  margin: auto auto;
+  border-radius: 5vmin;
+  width:100vmin;
+  height: auto;
+  background-image: linear-gradient(#7EAE83 6%,
+                    transparent 14%);
+  background-size: 1vmin 1vmin;
+  background-position: 0px, 0px;
+  left: 0px;
+  top: 0px;
+  transition: all 200ms ease;
+  animation:pan-overlay 10000ms infinite linear;
+  margin-top: 1vmin;
+  margin-bottom: 1vmin;
+  
+}
+@keyframes pan-overlay{
+  from{
+      background-position: 0% 0%;
+  }
+  to{
+      background-position: 0% -100%;
+  }
+}
+.blog-preview:hover{
+  font-family: 'Ballet', cursive;
+  font-weight: bold;
+  background:#90EE9E;
+  border-radius: 2vmin;
+  box-shadow: #202020 5vmin 5vmin 0px;
+}
+
+.error{
+  font-size: 5vmin;
+  color: red;
+}
+
+h2{
+  font-size: 5vmin;
+}
+
+.blogBody{
+  margin: 12vmin;
+  font-size: 3vmin;
+  text-align: left;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 100vmin;
+  margin: auto;
+  font-size: 3vmin;
+}
+button{
+  width: 10vmin;
+  margin: auto;
+  margin-bottom: 5vmin;
+  font-family:'Trochut', cursive;
+  font-size: 2vmin;
+  background-color: #90EE9E;
+  border: none;
+  border-radius: 2vmin;
+  transition: all 100ms;
+}
+button:hover{
+  box-shadow: #202020 1vmin 1vmin 0px;
+  height: 7vmin;
+  cursor: pointer;
+}
+.fields{
+  margin-top: 5vmin;
+}
+textarea::placeholder{
+  font-family:'Trochut', cursive;
+  font-size: 2vmin;
+}
+textarea{
+  font-family:'Trochut', cursive;
+  font-size: 2vmin;
+
+}
+select, input{
+  font-family:'Trochut', cursive;
+  font-size: 2vmin;
+
+}
+
+.form2{
+  display: flex;
+  flex-direction: column;
+  width: 50vmin;
+  margin: auto;
+  font-size: 2.5vmin;
+}
+.last{
+  margin-bottom: 5vmin;
+}
+
+.alert-container {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  color: #202020;
+}
+.alert-inner {
+  display: inline-block;
+  padding: 8px 16px;
+  z-index: 1;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 10px -3px rgb(0 0 0 / 70%);
+  -webkit-box-shadow: 1px 2px 10px -3px rgb(0 0 0 / 70%);
+  -moz-box-shadow: 1px 2px 10px -3px rgb(0 0 0 / 70%);
 }

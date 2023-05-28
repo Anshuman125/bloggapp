@@ -1,0 +1,18 @@
+{
+  "reg": [
+    {
+      "name": "mario",
+      "email": "mario@gmail.com",
+      "password": "mario@123",
+      "phone": "9876543210",
+      "id": 1
+    },
+    {
+      "name": "yoshi",
+      "email": "yoshi@gmail.com",
+      "password": "123@yoshi",
+      "phone": "8765432109",
+      "id": 2
+    }
+  ]
+}
